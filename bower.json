@@ -1,0 +1,23 @@
+{
+    "name": "mean",
+    "version": "0.4.0",
+    "dependencies": {
+        "jquery": "latest",
+        "jquery-ui": "latest",
+        "metro-ui-css": "latest",
+        "ng-file-upload-shim": "~1.6.7",
+		"angular": "latest",
+		"ng-file-upload": "~1.6.7",
+        "angular-resource": "latest",
+        "angular-cookies": "latest",
+        "angular-mocks": "latest",
+        "angular-route": "latest",
+        "bootstrap": "latest",
+        "angular-bootstrap": "0.11.0",
+        "angular-ui-router": "#master",
+        "polymer": "Polymer/polymer#latest",
+        "core-elements": "Polymer/core-elements#latest",
+        "paper-elements": "Polymer/paper-elements#latest",
+		"picturefill": "latest"
+		}
+}

@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{31894275-D183-4144-A435-65565D2A5ECA}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>mean.baba</RootNamespace>
+    <AssemblyName>mean.baba</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".bowerrc" />
+    <Content Include=".csslintrc" />
+    <Content Include=".jshintignore" />
+    <Content Include=".jshintrc" />
+    <Content Include=".slugignore" />
+    <Content Include=".travis.yml" />
+    <Content Include="AUTHORS" />
+    <Content Include="bower.json" />
+    <Content Include="config\env\all.js" />
+    <Content Include="config\env\development.js" />
+    <Content Include="config\env\production.js" />
+    <Content Include="config\env\test.js" />
+    <Content Include="config\express.js" />
+    <Content Include="LICENSE" />
+    <Content Include="package.json" />
+    <Content Include="packages\access\app.js" />
+    <Content Include="packages\access\server\config\authorization.js" />
+    <Content Include="packages\access\server\config\passport.js" />
+    <Content Include="packages\articles\app.js" />
+    <Content Include="packages\articles\public\articles.js" />
+    <Content Include="packages\articles\public\assets\css\articles.css" />
+    <Content Include="packages\articles\public\assets\img\logo.png" />
+    <Content Include="packages\articles\public\controllers\articles.js" />
+    <Content Include="packages\articles\public\routes\articles.js" />
+    <Content Include="packages\articles\public\services\articles.js" />
+    <Content Include="packages\articles\public\tests\articles.spec.js" />
+    <Content Include="packages\articles\public\views\create.html" />
+    <Content Include="packages\articles\public\views\edit.html" />
+    <Content Include="packages\articles\public\views\list.html" />
+    <Content Include="packages\articles\public\views\view.html" />
+    <Content Include="packages\articles\server\controllers\articles.js" />
+    <Content Include="packages\articles\server\models\article.js" />
+    <Content Include="packages\articles\server\routes\articles.js" />
+    <Content Include="packages\articles\server\tests\articles.js" />
+    <Content Include="packages\businessunits\app.js" />
+    <Content Include="packages\businessunits\public\assets\css\businessunits.css" />
+    <Content Include="packages\businessunits\public\businessunits.js" />
+    <Content Include="packages\businessunits\public\controllers\businessunits.js" />
+    <Content Include="packages\businessunits\public\routes\businessunits.js" />
+    <Content Include="packages\businessunits\public\services\businessunits.js" />
+    <Content Include="packages\businessunits\public\tests\businessunits.spec.js" />
+    <Content Include="packages\businessunits\public\views\businessloginview.html" />
+    <Content Include="packages\businessunits\public\views\create.html" />
+    <Content Include="packages\businessunits\public\views\edit.html" />
+    <Content Include="packages\businessunits\public\views\list.html" />
+    <Content Include="packages\businessunits\public\views\view.html" />
+    <Content Include="packages\businessunits\server\controllers\businessunits.js" />
+    <Content Include="packages\businessunits\server\models\businessunits.js" />
+    <Content Include="packages\businessunits\server\routes\businessunits.js" />
+    <Content Include="packages\businessunits\server\tests\businessunits.js" />
+    <Content Include="packages\category\app.js" />
+    <Content Include="packages\category\public\assets\css\categories.css" />
+    <Content Include="packages\category\public\assets\img\logo.png" />
+    <Content Include="packages\category\public\categories.js" />
+    <Content Include="packages\category\public\controllers\categoriesController.js" />
+    <Content Include="packages\category\public\routes\categoriesRoute.js" />
+    <Content Include="packages\category\public\services\categoriesService.js" />
+    <Content Include="packages\category\public\tests\categories.spec.js" />
+    <Content Include="packages\category\public\views\create.html" />
+    <Content Include="packages\category\public\views\edit.html" />
+    <Content Include="packages\category\public\views\list.html" />
+    <Content Include="packages\category\public\views\view.html" />
+    <Content Include="packages\category\server\controllers\categories.js" />
+    <Content Include="packages\category\server\models\categories.js" />
+    <Content Include="packages\category\server\routes\categories.js" />
+    <Content Include="packages\category\server\tests\categories.js" />
+    <Content Include="packages\discounts\app.js" />
+    <Content Include="packages\discounts\public\assets\css\discounts.css" />
+    <Content Include="packages\discounts\public\assets\img\logo.png" />
+    <Content Include="packages\discounts\public\controllers\discounts.js" />
+    <Content Include="packages\discounts\public\discounts.js" />
+    <Content Include="packages\discounts\public\routes\discounts.js" />
+    <Content Include="packages\discounts\public\services\discounts.js" />
+    <Content Include="packages\discounts\public\tests\discounts.spec.js" />
+    <Content Include="packages\discounts\public\views\B2B\listByCategory.html" />
+    <Content Include="packages\discounts\public\views\B2B\tiles.html" />
+    <Content Include="packages\discounts\public\views\B2B\create.html" />
+    <Content Include="packages\discounts\public\views\B2B\edit.html" />
+    <Content Include="packages\discounts\public\views\B2B\list.html" />
+    <Content Include="packages\discounts\public\views\B2B\view.html" />
+    <Content Include="packages\discounts\public\views\hot.html" />
+    <Content Include="packages\discounts\public\views\news.html" />
+    <Content Include="packages\discounts\public\views\create.html" />
+    <Content Include="packages\discounts\public\views\edit.html" />
+    <Content Include="packages\discounts\public\views\list.html" />
+    <Content Include="packages\discounts\public\views\carousel.html" />
+    <Content Include="packages\discounts\public\views\recent.html" />
+    <Content Include="packages\discounts\public\views\upcoming.html" />
+    <Content Include="packages\discounts\server\controllers\discounts.js" />
+    <Content Include="packages\discounts\server\models\discounts.js" />
+    <Content Include="packages\discounts\server\routes\discounts.js" />
+    <Content Include="packages\discounts\server\tests\discounts.js" />
+    <Content Include="packages\system\app.js" />
+    <Content Include="packages\system\public\assets\css\common.css" />
+    <Content Include="packages\system\public\assets\img\apple\apple-touch-icon-114x114-precomposed.png" />
+    <Content Include="packages\system\public\assets\img\apple\apple-touch-icon-144x144-precomposed.png" />
+    <Content Include="packages\system\public\assets\img\apple\apple-touch-icon-57x57-precomposed.png" />
+    <Content Include="packages\system\public\assets\img\apple\apple-touch-icon-72x72-precomposed.png" />
+    <Content Include="packages\system\public\assets\img\apple\apple-touch-icon-precomposed.png" />
+    <Content Include="packages\system\public\assets\img\apple\apple-touch-icon.png" />
+    <Content Include="packages\system\public\assets\img\apple\splash.png" />
+    <Content Include="packages\system\public\assets\img\apple\splash2x.png" />
+    <Content Include="packages\system\public\assets\img\favicon.ico" />
+    <Content Include="packages\system\public\assets\img\loaders\loader.gif" />
+    <Content Include="packages\discounts\public\assets\img\sale\sale-0.jpg" />
+    <Content Include="packages\discounts\public\assets\img\sale\sale-1.jpg" />
+    <Content Include="packages\discounts\public\assets\img\sale\sale-2.jpg" />
+    <Content Include="packages\discounts\public\assets\img\sale\sale-3.jpg" />
+    <Content Include="packages\discounts\public\assets\img\sale\sale-4.jpg" />
+    <Content Include="packages\discounts\public\assets\img\sale\sale-5.jpg" />
+    <Content Include="packages\discounts\public\assets\img\sale\sale-6.jpg" />
+    <Content Include="packages\discounts\public\assets\img\sale\sale-7.jpg" />
+    <Content Include="packages\discounts\public\assets\img\sale\sale-8.jpg" />
+    <Content Include="packages\system\public\assets\img\sprites\glyphicons-halflings-white.png" />
+    <Content Include="packages\system\public\assets\img\sprites\glyphicons-halflings.png" />
+    <Content Include="packages\system\public\assets\static\humans.txt" />
+    <Content Include="packages\system\public\assets\static\robots.txt" />
+    <Content Include="packages\system\public\controllers\header.js" />
+    <Content Include="packages\system\public\controllers\index.js" />
+    <Content Include="packages\system\public\init.js" />
+    <Content Include="packages\system\public\routes\system.js" />
+    <Content Include="packages\system\public\services\global.js" />
+    <Content Include="packages\system\public\services\interceptor.js" />
+    <Content Include="packages\system\public\services\menus.js" />
+    <Content Include="packages\system\public\system.js" />
+    <Content Include="packages\system\public\tests\headers.spec.js" />
+    <Content Include="packages\system\public\tests\index.spec.js" />
+    <Content Include="packages\system\public\views\category-icons.html" />
+    <Content Include="packages\system\public\views\category-images.html" />
+    <Content Include="packages\system\public\views\app-bar.html" />
+    <Content Include="packages\system\public\views\app-bar.css" />
+    <Content Include="packages\system\public\views\custom-elements.html" />
+    <Content Include="packages\system\public\views\feature-carousel.html" />
+    <Content Include="packages\system\public\views\feature-carousel.css" />
+    <Content Include="packages\system\public\views\discount\discount-board.css" />
+    <Content Include="packages\system\public\views\discount\discount-board.html" />
+    <Content Include="packages\system\public\views\discount\discount-datasource.html" />
+    <Content Include="packages\system\public\views\discount\discount-items-themes.css" />
+    <Content Include="packages\system\public\views\discount\discount-items.css" />
+    <Content Include="packages\system\public\views\discount\discount-items.html" />
+    <Content Include="packages\system\public\views\discount\theme.html" />
+    <Content Include="packages\system\public\views\discount\discount-item-front-page.html" />
+    <Content Include="packages\system\public\views\discount\discount-item-themes.css" />
+    <Content Include="packages\system\public\views\discount\discount-item.css" />
+    <Content Include="packages\system\public\views\discount\discount-item.html" />
+    <Content Include="packages\system\public\views\header.html" />
+    <Content Include="packages\system\public\views\index.html" />
+    <Content Include="packages\system\server\controllers\index.js" />
+    <Content Include="packages\system\server\routes\index.js" />
+    <Content Include="packages\system\server\routes\menus.js" />
+    <Content Include="packages\system\server\views\404.html" />
+    <Content Include="packages\system\server\views\500.html" />
+    <Content Include="packages\system\server\views\admin.html" />
+    <Content Include="packages\system\server\views\includes\foot.html" />
+    <Content Include="packages\system\server\views\b2b.html" />
+    <Content Include="packages\system\server\views\index.html" />
+    <Content Include="packages\system\server\views\layouts\b2b.html" />
+    <Content Include="packages\system\server\views\layouts\admin.html" />
+    <Content Include="packages\system\server\views\layouts\default.html" />
+    <Content Include="packages\users\app.js" />
+    <Content Include="packages\users\public\assets\css\meanUser.css" />
+    <Content Include="packages\users\public\assets\img\icons\facebook.png" />
+    <Content Include="packages\users\public\assets\img\icons\favicon.ico" />
+    <Content Include="packages\users\public\assets\img\icons\github.png" />
+    <Content Include="packages\users\public\assets\img\icons\google.png" />
+    <Content Include="packages\users\public\assets\img\icons\linkedin.png" />
+    <Content Include="packages\users\public\assets\img\icons\twitter.png" />
+    <Content Include="packages\users\public\assets\img\logo.png" />
+    <Content Include="packages\users\public\controllers\meanUser.js" />
+    <Content Include="packages\users\public\routes\auth.js" />
+    <Content Include="packages\users\public\routes\usersRoute.js" />
+    <Content Include="packages\users\public\services\meanUser.js" />
+    <Content Include="packages\users\public\tests\auth.spec.js" />
+    <Content Include="packages\users\public\users.js" />
+    <Content Include="packages\users\public\views\forgot-password.html" />
+    <Content Include="packages\users\public\views\index.html" />
+    <Content Include="packages\users\public\views\login.html" />
+    <Content Include="packages\users\public\views\register.html" />
+    <Content Include="packages\users\public\views\change-password.html" />
+    <Content Include="packages\users\public\views\reset-password.html" />
+    <Content Include="packages\users\server\controllers\usersController.js" />
+    <Content Include="packages\users\server\controllers\users.js" />
+    <Content Include="packages\users\server\models\user.js" />
+    <Content Include="packages\users\server\routes\users.js" />
+    <Content Include="packages\users\server\template.js" />
+    <Content Include="packages\users\server\tests\users.js" />
+    <Content Include="Procfile" />
+    <Content Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+    <Content Include="Gruntfile.js" />
+    <Content Include="karma.conf.js" />
+    <Content Include="server.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages\access\package.json" />
+    <Content Include="packages\access\README.md" />
+    <Content Include="packages\articles\package.json" />
+    <Content Include="packages\articles\README.md" />
+    <Content Include="packages\discounts\package.json" />
+    <Content Include="packages\discounts\README.md" />
+    <Content Include="packages\system\package.json" />
+    <Content Include="packages\system\README.md" />
+    <Content Include="packages\users\package.json" />
+    <Content Include="packages\users\README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="config\assets.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="packages\businessunits\public\assets\img\coverphoto\large\" />
+    <Folder Include="packages\businessunits\public\assets\img\coverphoto\medium\" />
+    <Folder Include="packages\businessunits\public\assets\img\coverphoto\original\" />
+    <Folder Include="packages\businessunits\public\assets\img\coverphoto\small\" />
+    <Folder Include="packages\businessunits\public\assets\img\logo\large\" />
+    <Folder Include="packages\businessunits\public\assets\img\logo\medium\" />
+    <Folder Include="packages\businessunits\public\assets\img\logo\original\" />
+    <Folder Include="packages\businessunits\public\assets\img\logo\small\" />
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages\system\public\views\discount\discounts.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages\businessunits\package.json" />
+    <Content Include="packages\businessunits\README.md" />
+    <Content Include="packages\category\README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages\category\package.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages\businessunits\package.json" />
+    <Content Include="packages\businessunits\README.md" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53172</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:53172/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

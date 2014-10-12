@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeanTest", "MeanTest.csproj", "{31894275-D183-4144-A435-65565D2A5ECA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "topeka", "topeka\topeka.csproj", "{1CF04C50-8746-4B82-8822-648302B80669}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "topeka-elements", "topeka-elements\topeka-elements.csproj", "{B8924354-A1E4-4245-AAEF-B9445CB464CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31894275-D183-4144-A435-65565D2A5ECA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31894275-D183-4144-A435-65565D2A5ECA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31894275-D183-4144-A435-65565D2A5ECA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31894275-D183-4144-A435-65565D2A5ECA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CF04C50-8746-4B82-8822-648302B80669}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CF04C50-8746-4B82-8822-648302B80669}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CF04C50-8746-4B82-8822-648302B80669}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CF04C50-8746-4B82-8822-648302B80669}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8924354-A1E4-4245-AAEF-B9445CB464CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8924354-A1E4-4245-AAEF-B9445CB464CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8924354-A1E4-4245-AAEF-B9445CB464CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8924354-A1E4-4245-AAEF-B9445CB464CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
